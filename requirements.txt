@@ -1,6 +1,5 @@
 streamlit
-pandas
-numpy
-altair
 paho-mqtt
+pandas
 plotly
+streamlit-autorefresh
