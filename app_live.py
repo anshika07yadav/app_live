@@ -6,6 +6,20 @@ from datetime import datetime
 import json
 import queue
 
+
+
+# Hide the GitHub icon
+hide_github_icon = """
+<style>
+.viewerBadge_container__1QSob,
+.styles_viewerBadge__1yVx5,
+[data-testid="stToolbar"] a[href*="github.com"] {
+    display: none !important;
+}
+</style>
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 # ============================================================
 # PAGE CONFIGURATION
 # ============================================================
