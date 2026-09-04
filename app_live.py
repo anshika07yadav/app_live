@@ -46,7 +46,7 @@ def start_mqtt_client():
         client = mqtt.Client()
 
     def on_connect(c, userdata, flags, rc, *args):
-        c.subscribe(MQTT_TOPIC)
+        c.subscribe("haes/esp32/telemetry")
 
     def on_message(c, userdata, msg):
         try:
